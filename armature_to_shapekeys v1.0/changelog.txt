@@ -1,0 +1,8 @@
+v1.0
+
+created the script
+
+Select an object with an armature modifier, which is connected to an armature and click on the "Armature to Shapekeys" button.
+This will create as many Shapekeys as selected within the selected timeframe.
+
+Does not work without modifier or Armature
