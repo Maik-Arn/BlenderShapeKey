@@ -1,0 +1,18 @@
+v1.2
+
+Fixed ShapeKey['Key'] not beeing found
+
+v1.1
+
+Added Features for Blender version 3.0 and higher
+
+Fix animation adding modifier and shapekeys together
+
+v1.0
+
+created the script
+
+Select an object with an armature modifier, which is connected to an armature and click on the "Armature to Shapekeys" button.
+This will create as many Shapekeys as selected within the selected timeframe.
+
+Does not work without modifier or Armature
