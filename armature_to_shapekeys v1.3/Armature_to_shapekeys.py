@@ -13,10 +13,10 @@ bl_info = {
 import bpy, bpy.ops, bpy.props, bpy.types, bpy.utils, bgl, blf, mathutils, math
 from mathutils import *
 
-class VIEW3D_PT_polipolArmatureTools(bpy.types.Panel):
+class VIEW3D_PT_customArmatureTools(bpy.types.Panel):
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = 'Polipol'
+    bl_category = 'Custom'
     bl_label = 'Armature to Shapekeys'
     
     def draw(self, context):
@@ -36,7 +36,7 @@ class VIEW3D_PT_polipolArmatureTools(bpy.types.Panel):
 class ArmatureToShapekeys(bpy.types.Operator):
     """Origin für Export setzen"""
     bl_idname = "object.toshapekeys"
-    bl_label = "Polipol Armature Macro"
+    bl_label = "Custom Armature Macro"
     bl_options = {'REGISTER', 'UNDO'}
     
     
@@ -176,12 +176,12 @@ class ArmatureToShapekeys(bpy.types.Operator):
             return {'FINISHED'}
 
 def register():
-    bpy.utils.register_class(VIEW3D_PT_polipolArmatureTools)
+    bpy.utils.register_class(VIEW3D_PT_customArmatureTools)
     bpy.utils.register_class(ArmatureToShapekeys)
     
 
 def unregister():
-    bpy.utils.unregister_class(VIEW3D_PT_polipolArmatureTools)
+    bpy.utils.unregister_class(VIEW3D_PT_customArmatureTools)
     bpy.utils.unregister_class(ArmatureToShapekeys)
     
 if __name__ == "__main__":
